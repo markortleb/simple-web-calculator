@@ -9,3 +9,9 @@ Try it for yourself: https://markortleb.github.io/simple-web-calculator/
 For more specifications on what this calculator can do, see the description
 on the older model this calculator was based on: 
 https://github.com/markortleb/simple-qt-calculator.
+
+## How to host
+To host this app, run the following command:
+``` bash
+make host
+```
