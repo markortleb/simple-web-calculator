@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source ./import_env.sh
+
+REGISTRY_PATH="$REGISTRY_DOMAIN/$DOCKER_GROUP_NAME/$DOCKER_PROJECT_NAME:latest"
+
+echo "REGISTRY PATH: $REGISTRY_PATH"
+
+docker login "$REGISTRY_DOMAIN" -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
+docker tag $DOCKER_PROJECT_NAME "$REGISTRY_PATH"
+docker push "$REGISTRY_PATH"
