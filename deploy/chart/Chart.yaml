@@ -1,0 +1,4 @@
+apiVersion: v2
+name: simple-web-calculator
+description: A Helm chart for deploying the Simple Web Calculator.
+version: 0.1.0

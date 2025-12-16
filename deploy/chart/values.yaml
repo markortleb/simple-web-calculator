@@ -1,0 +1,18 @@
+image:
+  registry: ""
+  repository: ""
+  tag: latest
+  secret: ""
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  className: ""
+  host: ""
+  tls:
+    enabled: false
+    secretName: ""
+    clusterIssuer: ""
